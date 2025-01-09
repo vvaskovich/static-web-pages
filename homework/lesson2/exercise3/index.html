@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 3</title>
+    <style>
+        .squareMarker {
+            list-style-type: square;
+        }
+
+        .customMarker {
+            list-style-type: none;
+        }
+
+        .customMarker li::before { /* правильно использовать ::marker */
+            content: "V ";
+        }
+
+        .imageMarker {
+            list-style-image: url("book.png");
+        }
+
+        .inlineList li {
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Превратите каждую строку в пункт списка -->
+    <div>
+        <ol>
+            <li>Half-Life 2: Episode One</li>
+            <li>Half-Life 2: Episode Two</li>
+            <li>Half-Life 2: Episode Three</li>
+        </ol>
+    </div>
+    <div>
+        <!-- Превратите первую строку в заголовок <h3> и каждую строку с названиями работ в пункт списка -->
+        <h3>Работы Микеланджело</h3>
+        <ul>
+            <li>Бахус</li>
+            <li>Давид</li>
+            <li>Пьета</li>
+        </ul>
+    </div>
+    <div>
+        <!--  Добавьте атрибут start, чтобы список начинался с 11 -->
+        <ol start="11">
+            <li>Николай I</li>
+            <li>Александр II</li>
+            <li>Александр III</li>
+            <li>Николай II</li>
+        </ol>
+    </div>
+    <div>
+        <!-- Сделайте «Российские императоры» пунктом первого уровня, а имена — второго -->
+        <ul>
+            <li>
+                Российские императоры
+                <ul>
+                    <li>Пётр I Великий</li>
+                    <li>Екатерина I</li>
+                    <li>Пётр II</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <!-- Установите для списка квадратные маркеры -->
+        <ul class="squareMarker">
+            <li>Сепульки</li>
+            <li>Сепулькарии</li>
+            <li>Сепуление</li>
+        </ul>
+    </div>
+    <div>
+        <!-- Скройте маркеры у списка, добавив к селектору li псевдоэлемент ::before и установив в качестве маркера произвольный символ -->
+        <ul class="customMarker">
+            <li>Сепульки</li>
+            <li>Сепулькарии</li>
+            <li>Сепуление</li>
+        </ul>
+    </div>
+    <div>
+        <!-- Установите свойство list-style-image с адресом картинки -->
+        <ul class="imageMarker">
+            <li>Сепульки</li>
+            <li>Сепулькарии</li>
+            <li>Сепуление</li>
+        </ul>
+    </div>
+    <div>
+        <!-- Установите для элемента <li> свойства: display со значением inline-block и padding со значением 10px -->
+        <ul class="inlineList">
+            <li>Сепульки</li>
+            <li>Сепулькарии</li>
+            <li>Сепуление</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Border</title>
+    <style>
+        .container {
+            width: 430px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #b2d235;
+        }
+
+        .content {
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #fff;
+        }
+
+        .answer {
+            width: 350px;
+            margin-top: 20px;
+            padding: 40px;
+            background: #B2D235;
+            outline: 2px solid #fff; /* не влияет на размер и расположение элемента в отличие от border */
+            outline-offset: -20px; /* смещение внутрь на 20px по всем осям */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            По мере нашего продвижения страна, как и ее обитатели,
+            становилась все более дикой и прекрасной. Теперь мы двигались
+            сквозь сосновые леса с островками дубовых рощ, зарослей
+            красивого кустарника и папоротника.
+        </div>
+    </div>
+    <div class="answer">
+        По мере нашего продвижения страна, как и ее обитатели,
+        становилась все более дикой и прекрасной. Теперь мы двигались
+        сквозь сосновые леса с островками дубовых рощ, зарослей
+        красивого кустарника и папоротника.
+    </div>
+</body>
+</html>

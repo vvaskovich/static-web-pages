@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise4</title>
+    <style>
+        .coloredCells td {
+            padding: 0.5rem;
+            background-color: #ececec;
+        }
+
+        .coloredCellWithSpacing td {
+            padding: 1rem;
+            background-color: #4c715b;
+            color: #fff;
+        }
+
+        .coloredCellWithSpacing {
+            border-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Превратите текст в первой строке таблицы в элемент <th>, а затем объедините две ячейки в <th> с помощью атрибута colspan -->
+        <table>
+            <tr>
+                <th colspan="2">Черепашки-ниндзя</th>
+            </tr>
+            <tr>
+                <td>Имя</td>
+                <td>Оружие</td>
+            </tr>
+            <tr>
+                <td>Леонардо</td>
+                <td>Катаны</td>
+            </tr>
+            <tr>
+                <td>Рафаэль</td>
+                <td>Кинжалы-сай</td>
+            </tr>
+            <tr>
+                <td>Донателло</td>
+                <td>Шест-бо</td>
+            </tr>
+            <tr>
+                <td>Микеланджело</td>
+                <td>Нунчаки</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!-- Для td установите цвет фона #ececec и padding со значением 0.5rem -->
+        <table class="coloredCells">
+            <tr>
+                <td>Имя</td>
+                <td>Оружие</td>
+            </tr>
+            <tr>
+                <td>Леонардо</td>
+                <td>Катаны</td>
+            </tr>
+            <tr>
+                <td>Рафаэль</td>
+                <td>Кинжалы-сай</td>
+            </tr>
+            <tr>
+                <td>Донателло</td>
+                <td>Шест-бо</td>
+            </tr>
+            <tr>
+                <td>Микеланджело</td>
+                <td>Нунчаки</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!--
+            Для td установите фоновый цвет #4c715b и свойство padding с произвольным значением.
+            Для table установите свойство border-spacing со значением 4px
+        -->
+        <table class="coloredCellWithSpacing">
+            <tr>
+                <td>Имя</td>
+                <td>Оружие</td>
+            </tr>
+            <tr>
+                <td>Леонардо</td>
+                <td>Катаны</td>
+            </tr>
+            <tr>
+                <td>Рафаэль</td>
+                <td>Кинжалы-сай</td>
+            </tr>
+            <tr>
+                <td>Донателло</td>
+                <td>Шест-бо</td>
+            </tr>
+            <tr>
+                <td>Микеланджело</td>
+                <td>Нунчаки</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
