@@ -9,9 +9,13 @@
     font-size: 18px;
 }
 
+.awesome {
+    margin-top: 118px;
+}
+
 .container {
     max-width: 1170px;
-    margin: 118px auto 0 auto; /* выравнивание блочного тега по центру родительского тега */
+    margin: 0 auto; /* выравнивание блочного тега по центру родительского тега */
     padding: 0 16px;
 }
 
