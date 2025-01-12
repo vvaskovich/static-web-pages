@@ -1,4 +1,9 @@
-@import url("awesome.css"); /* добавляем стили из файла awesome.css */
+/* подключаем шрифты */
+@import url("fonts/raleway.css");
+@import url("fonts/openSans.css");
+
+/* подключаем стили */
+@import url("awesome.css");
 @import url("pricing.css");
 
 * {
