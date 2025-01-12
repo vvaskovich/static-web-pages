@@ -1,0 +1,43 @@
+.awesome {
+    padding-top: 118px;
+    padding-bottom: 110px;
+}
+
+.awesome__cardList {
+    display: flex; /* делает элемент контейнером Flexbox */
+    gap: 27px;  /* указывает разрыв между дочерними элементами контейнера */
+    flex-wrap: wrap; /* разрешает элементу переходить на новую строку при нехватке места в контейнере */
+    justify-content: center;
+    margin-top: 92px;
+}
+
+.awesome__card {
+    flex-basis: 288px; /* задает начальную ширину элементу в контейнере */
+    flex-grow: 1; /* какая доля свободного места в контейнере достанется элементу */
+}
+
+.awesome__cardIcon {
+    display: flex;
+    justify-content: center; /* выравнивание по оси x внутри контейнера*/
+    align-items: center; /* выравнивание по оси y внутри строки */
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+}
+
+.awesome__cardTitle {
+    margin-top: 24px;
+    font-family: "Open Sans", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+}
+
+.awesome__cardDescription {
+    margin-top: 26px;
+    line-height: 21px;
+    text-align: center;
+}
