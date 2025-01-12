@@ -9,18 +9,13 @@
     font-size: 18px;
 }
 
-.awesome {
-    padding-top: 118px;
-    padding-bottom: 110px;
-}
-
 .container {
     max-width: 1170px;
     margin: 0 auto; /* выравнивание блочного тега по центру родительского тега */
     padding: 0 16px;
 }
 
-.containerTitle {
+.container__title {
     margin-bottom: 40px;
     font-size: 36px;
     text-transform: uppercase;
@@ -28,19 +23,25 @@
     line-height: 42px;
 }
 
-.containerHorizontalSeparator {
+.container__horizontalSeparator {
     width: 170px;
     margin: 0 auto 40px;
     border-bottom: 1px solid #EC7979;
 }
 
-.containerSubtitle {
+.container__subtitle {
     text-align: center;
     line-height: 21px;
     color: #86878B;
 }
 
-.cardList {
+
+.awesome {
+    padding-top: 118px;
+    padding-bottom: 110px;
+}
+
+.awesome__cardList {
     display: flex; /* делает элемент контейнером Flexbox */
     gap: 27px;  /* указывает разрыв между дочерними элементами контейнера */
     flex-wrap: wrap; /* разрешает элементу переходить на новую строку при нехватке места в контейнере */
@@ -48,12 +49,12 @@
     margin-top: 92px;
 }
 
-.card {
+.awesome__card {
     flex-basis: 288px; /* задает начальную ширину элементу в контейнере */
     flex-grow: 1; /* какая доля свободного места в контейнере достанется элементу */
 }
 
-.cardIcon {
+.awesome__cardIcon {
     display: flex;
     justify-content: center; /* выравнивание по оси x внутри контейнера*/
     align-items: center; /* выравнивание по оси y внутри строки */
@@ -64,7 +65,7 @@
     border-radius: 50%;
 }
 
-.cardTitle {
+.awesome__cardTitle {
     margin-top: 24px;
     font-family: "Open Sans", serif;
     font-size: 24px;
@@ -73,7 +74,7 @@
     text-align: center;
 }
 
-.cardDescription {
+.awesome__cardDescription {
     margin-top: 26px;
     line-height: 21px;
     text-align: center;
@@ -85,7 +86,7 @@
     background-color: #f5f5f5;
 }
 
-.servicePlanList {
+.pricing__servicePlanList {
     display: flex;
     gap: 30px;
     align-items: flex-end;
@@ -94,7 +95,7 @@
     margin-top: 59px;
 }
 
-.servicePlan {
+.pricing__servicePlan {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -103,13 +104,13 @@
     max-width: 370px;
 }
 
-.servicePlanSelected {
+.pricing__servicePlanSelected {
     margin-bottom: 20px;
     background-color: #f5f5f5;
     box-shadow: 0 4px 10px 0 #33333333; 
 }
 
-.servicePlan > * { /* выбирает все дочерние элементы внутри тега с классом servicePlan */
+.pricing__servicePlan > * { /* выбирает все дочерние элементы внутри тега с классом servicePlan */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,15 +118,15 @@
     box-sizing: border-box;
 }
 
-.servicePlan > :not(:first-child) { /* выбирает все дочерние элементы внутри тега с классом servicePlan, кроме первого */
+.pricing__servicePlan > :not(:first-child) { /* выбирает все дочерние элементы внутри тега с классом servicePlan, кроме первого */
     border-top: none;
 }
 
-.servicePlan > :nth-child(-n+3) { /* выбирает любые первые три дочерних элемента внутри тега с классом servicePlan */
+.pricing__servicePlan > :nth-child(-n+3) { /* выбирает любые первые три дочерних элемента внутри тега с классом servicePlan */
     background-color: #333;
 }
 
-.servicePlanTitle {
+.pricing__servicePlanTitle {
     height: 60px;
     font-family: "Open Sans", serif;
     font-size: 24px;
@@ -133,44 +134,44 @@
     line-height: 33px;
 }
 
-.servicePlanPrice {
+.pricing__servicePlanPrice {
     height: 100px;
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
 }
 
-.servicePlanTitle, .servicePlanPrice {
+.pricing__servicePlanTitle, .pricing__servicePlanPrice {
     color: #fff;
 }
 
-.servicePlanSubtitle {
+.pricing__servicePlanSubtitle {
     height: 50px;
     line-height: 21px;
 }
 
-.servicePlanItem {
+.pricing__servicePlanItem {
     background-color: #fff;
     height: 50px;
     line-height: 21px;
 }
 
-.servicePlanSubtitle, .servicePlanItem {
+.pricing__servicePlanSubtitle, .pricing__servicePlanItem {
     color: #86878B;
 }
 
 @media (max-width: 1170px) { /* применяет стили, если ширина экрана меньше или равна 1170px */
-    .servicePlanList {
+    .pricing__servicePlanList {
         gap: 20px;
     }
 }
 
 @media (max-width: 949px) {
-    .servicePlanList {
+    .pricing__servicePlanList {
         gap: 27px;
     }
 
-    .servicePlanSelected {
+    .pricing__servicePlanSelected {
         margin-bottom: 0;
         box-shadow: none; 
     }
