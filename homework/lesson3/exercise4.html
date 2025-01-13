@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise4</title>
+    <style>
+        .borderFirst {
+            padding: 22px;
+            color: #fff;
+            background: #86328C;
+            outline: 2px solid #fff;
+            outline-offset: -4px;
+        }
+    
+        .borderSecond {
+            padding: 16px;
+            color: #fff;
+            background-color: #86328C;
+            border: 6px double #fff;
+        }
+    
+        .borderThird {
+            color: #fff;
+            background-color: #86328C;
+            border: 2px solid #86328C;
+        }
+
+        .borderThird div {
+            padding: 18px;
+            border: 2px solid #fff;
+        }
+    
+    
+        .borderTable {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #B6DEC2;
+        }
+    
+        .borderTable th, .borderTable td {
+            padding: 7px;
+            border: 2px solid #fff;
+        }
+        
+        .list {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 7px;
+            background-color: #b18979;
+            color: #fff;
+            font-family: sans-serif;
+        }
+        
+        .list td {
+            padding: 16px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .list tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Придумайте три способа создания рамки -->
+        <div class="borderFirst">Рамка вокруг текста</div>
+        <div class="borderSecond">Рамка вокруг текста</div>
+        <div class="borderThird">
+            <div>Рамка вокруг текста</div>
+        </div>
+    </div>
+    <div>
+        <table class="borderTable">
+            <tr>
+                <th>Имя</th>
+                <th>Оружие</th>
+            </tr>
+            <tr>
+                <td>Леонардо</td>
+                <td>Катаны</td>
+            </tr>
+            <tr>
+                <td>Рафаэль</td>
+                <td>Кинжалы-сай</td>
+            </tr>
+            <tr>
+                <td>Донателло</td>
+                <td>Шест-бо</td>
+            </tr>
+            <tr>
+                <td>Микеланджело</td>
+                <td>Нунчаки</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table class="list">
+            <tr>
+                <td>Пирамида Хеопса</td>
+            </tr>
+            <tr>
+                <td>Висячие сады Семирамиды</td>
+            </tr>
+            <tr>
+                <td>Статуя Зевса в Олимпии</td>
+            </tr>
+            <tr>
+                <td>Храм Артемиды в Эфесе</td>
+            </tr>
+            <tr>
+                <td>Мавзолей в Галикарнасе</td>
+            </tr>
+            <tr>
+                <td>Колосс Родосский</td>
+            </tr>
+            <tr>
+                <td>Александрийский маяк</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

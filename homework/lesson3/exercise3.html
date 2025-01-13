@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise3</title>
+    <style>
+        .collapsedBorderTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    
+        .collapsedBorderTable td {
+            border-top: 1px solid #808080;
+            border-bottom: 1px solid #808080;
+        }
+    
+    
+        .centeredTable {
+            width: 90%;
+            margin: 0 auto;
+        }
+    
+        .centeredTable td {
+            padding: 0.5rem;
+            border: 1px solid #000;
+            text-align: center;
+        }
+    
+    
+        .tableLayout {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .tableLayout td {
+            border: 1px solid #000;
+        }
+    
+        .tableLayout td:nth-child(3) {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Установите для table свойство border-collapse: collapse.
+            Для td задайте сплошные линии border-top и border-bottom толщиной 1px и произвольного цвета
+        -->
+        <table class="collapsedBorderTable">
+            <tr>
+                <td>Имя</td>
+                <td>Оружие</td>
+            </tr>
+            <tr>
+                <td>Леонардо</td>
+                <td>Катаны</td>
+            </tr>
+            <tr>
+                <td>Рафаэль</td>
+                <td>Кинжалы-сай</td>
+            </tr>
+            <tr>
+                <td>Донателло</td>
+                <td>Шест-бо</td>
+            </tr>
+            <tr>
+                <td>Микеланджело</td>
+                <td>Нунчаки</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!-- Задайте ширину таблицы 90%, выравнивание по центру.
+             Для td — горизонтальное выравнивание по центру
+        -->
+        <table class="centeredTable">
+            <tr>
+                <td>Имя</td>
+                <td>Оружие</td>
+            </tr>
+            <tr>
+                <td>Леонардо</td>
+                <td>Катаны</td>
+            </tr>
+            <tr>
+                <td>Рафаэль</td>
+                <td>Кинжалы-сай</td>
+            </tr>
+            <tr>
+                <td>Донателло</td>
+                <td>Шест-бо</td>
+            </tr>
+            <tr>
+                <td>Микеланджело</td>
+                <td>Нунчаки</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!-- Таблица шириной 80%, выровненная по центру, с содержимым третьей колонки по центру -->
+        <table class="tableLayout">
+            <tr>
+                <th>Название</th>
+                <th>Цвет</th>
+                <th>Твердость по Моосу</th>
+                <th>Формула</th>
+            </tr>
+            <tr>
+                <td>Алмаз</td>
+                <td>Белый</td>
+                <td>10</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Рубин</td>
+                <td>Красный</td>
+                <td>9</td>
+                <td>Al<sub>2</sub>O<sub>3</sub></td>
+            </tr>
+            <tr>
+                <td>Аметист</td>
+                <td>Голубой</td>
+                <td>7</td>
+                <td>SiO<sub>2</sub></td>
+            </tr>
+            <tr>
+                <td>Изумруд</td>
+                <td>Зеленый</td>
+                <td>8</td>
+                <td>Be<sub>3</sub>Al<sub>2</sub>(SiO<sub>3</sub>)<sub>6</sub></td>
+            </tr>
+            <tr>
+                <td>Сапфир</td>
+                <td>Голубой</td>
+                <td>9</td>
+                <td>Al<sub>2</sub>O<sub>3</sub></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
