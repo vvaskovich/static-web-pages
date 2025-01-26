@@ -7,7 +7,6 @@
 .pricing__servicePlanList {
     display: flex;
     gap: 30px;
-    align-items: flex-end;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 59px;
@@ -22,17 +21,9 @@
     max-width: 370px;
 }
 
-.pricing__servicePlanSelected {
-    margin-bottom: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 10px 0 #33333333; 
-}
-
 .pricing__servicePlan > * { /* выбирает все дочерние элементы внутри тега с классом servicePlan */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 2px solid #f5f5f5;
+    text-align: center;
 }
 
 .pricing__servicePlan > :not(:first-child) { /* выбирает все дочерние элементы внутри тега с классом servicePlan, кроме первого */
@@ -44,7 +35,7 @@
 }
 
 .pricing__servicePlanTitle {
-    height: 60px;
+    padding: 13px 10px;
     font-family: var(--accent-font-family);
     font-size: var(--font-size-sm);
     font-weight: bold;
@@ -52,7 +43,7 @@
 }
 
 .pricing__servicePlanPrice {
-    height: 100px;
+    padding: 28px 10px;
     font-family: var(--main-font-family);
     font-size: var(--font-size-lg);
     font-weight: bold;
@@ -64,14 +55,14 @@
 }
 
 .pricing__servicePlanSubtitle {
-    height: 50px;
+    padding: 14px 10px;
     font-family: var(--main-font-family);
     font-size: var(--font-size-xs);
     line-height: 21px;
 }
 
 .pricing__servicePlanItem {
-    height: 50px;
+    padding: 14px 10px;
     font-family: var(--main-font-family);
     font-size: var(--font-size-xs);
     line-height: 21px;
