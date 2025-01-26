@@ -5,6 +5,7 @@
 /* подключаем стили */
 @import url("awesome.css");
 @import url("pricing.css");
+@import url("tab.css");
 
 * {
     margin: 0;
