@@ -1,6 +1,6 @@
 .awesome {
-    padding-top: 118px;
-    padding-bottom: 110px;
+    margin-top: 118px;
+    margin-bottom: 110px;
 }
 
 .awesome__cardList {
@@ -22,22 +22,23 @@
     align-items: center; /* выравнивание по оси y внутри строки */
     width: 92px;
     height: 92px;
-    margin: 0 auto;
+    margin: 0 auto 24px; 
     border: 1px solid #EC7979;
     border-radius: 50%;
 }
 
 .awesome__cardTitle {
-    margin-top: 24px;
-    font-family: "Open Sans", serif;
-    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: var(--accent-font-family);
+    font-size: var(--font-size-sm);
     font-weight: bold;
     line-height: 33px;
     text-align: center;
 }
 
 .awesome__cardDescription {
-    margin-top: 26px;
+    font-family: var(--main-font-family);
+    font-size: var(--font-size-xs);
     line-height: 21px;
     text-align: center;
 }
